@@ -1,0 +1,10 @@
+*
+
+!*.*
+!/**/
+!Makefile
+!makefile
+
+*.o
+*.bin
+*.log
