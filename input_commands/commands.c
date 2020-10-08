@@ -17,7 +17,9 @@
 #ifdef MARIOMAKER2
 #include "mariomaker2.h"
 #endif
-
+#ifdef TAS
+#include "tas.h"
+#endif
 
 #define COMMAND_COUNT 10
 
@@ -73,6 +75,9 @@ int initInputGenerator() {
 	#ifdef MARIOMAKER2
 	registerCommand(&mariomaker_hook);
 	registerCommand(&mm_hook);
+	#endif
+	#ifdef TAS
+	registerCommand(&tas_hook);
 	#endif
 	pthread_create(&thread, NULL, command_caller, NULL);
 	return 0;

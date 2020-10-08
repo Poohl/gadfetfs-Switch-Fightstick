@@ -24,6 +24,10 @@ featureflags += -DWII
 src += input_commands/mariomaker2.c
 featureflags += -DMARIOMAKER2
 
+# tas
+src += input_commands/tas.c
+featureflags += -DTAS
+
 all: gadgetfs_controller.bin
 
 run: gadgetfs_controller.bin

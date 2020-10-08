@@ -10,6 +10,7 @@
 #include <stddef.h>
 #include <errno.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef unsigned int uint;
 
